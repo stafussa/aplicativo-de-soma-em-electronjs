@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  font-family: 'Oswald', sans-serif;
+  background-color: rgb(59, 59, 59);
+}
+
+#fundo {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  background-color: rgb(153, 146, 146);
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  animation: example 3s infinite;
+}
+h2{
+  text-align: center;
+  margin-top: 30px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-top: 15px;
+}
+
+input{
+  height: 30px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(194, 194, 194);
+  color: rgb(107, 107, 107);
+  padding: 5px 5px 5px 10px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+  color: #ffffff;
+  background-color: rgba(56, 56, 56, 0.795);
+}
+
+label {
+  margin-top: 10px;
+  padding: 0px 0px 0px 5px;
+}
+
+
+button {
+  margin-top: 16px;  
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(116, 116, 116);
+  color: rgb(0, 0, 0);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#resultado {
+  margin-top: 1pqx;
+  font-size: 30px;
+  
+}
+
+
+@keyframes example {
+  0% { color: rgb(0, 0, 0); transform: translateY(0); }
+  25% { color: rgb(255, 255, 255); transform: translateY(-20px); }
+  50% { color: rgb(0, 0, 0); transform: translateY(0); }
+  75% { color: rgb(255, 255, 255); transform: translateY(20px); }
+  100% { color: rgb(0, 0, 0); transform: translateY(0); }
+}
